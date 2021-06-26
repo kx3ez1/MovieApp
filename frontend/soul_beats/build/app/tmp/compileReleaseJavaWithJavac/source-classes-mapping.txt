@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/soulbeats/soul_beats/MainActivity.java
+ com.soulbeats.soul_beats.MainActivity
+com/soulbeats/soul_beats/BuildConfig.java
+ com.soulbeats.soul_beats.BuildConfig
