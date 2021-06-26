@@ -3,7 +3,7 @@
  Added ***backend Security*** while Logging
 
 ## Usage
-This is Integrated with MobileMap To Inspect Users 
+This is Integrated with MobileApp To Inspect Users 
  - user on Entering App
  - user on Closing App
  
