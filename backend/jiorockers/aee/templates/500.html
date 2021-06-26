@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>SoulBeats</title>
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href= {{ url_for('static',filename="css/mdb.min.css") }} />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href={{ url_for('static',filename="css/style.css") }} />
+</head>
+<body>
+    <br>
+    <br>
+    <h1>Server Busy</h1>
+    <div class="text-left">
+        <a onclick="javascript:window.location.reload();" class="btn btn-sm btn-dark">Retry</a>
+    </div>
+
+<!--Footer-->
+  <footer class="bg-light text-lg-start fixed-bottom">
+    <hr class="m-0" />
+    <div class="text-center py-4 align-items-center">
+      <p>Enjoy Music On YOUTUBE</p>
+        <div>
+            <div>
+                  <a href="https://www.youtube.com/watch?v=ZMuUDJIG2rY" class="btn btn-danger btn-sm" role="button"
+                    rel="nofollow" target="_blank">
+                      <span style="font-family: 'Julee', cursive; font-size: large" class="text-light">SoulBeats &nbsp;</span>
+                    <i class="fab fa-youtube" style="font-size: large"></i>
+                  </a>
+                </div>
+        </div>
+      <!--a href="https://www.facebook.com/mdbootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/MDBootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/mdbootstrap/mdb-ui-kit" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-github"></i>
+      </a-->
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="">SoulBeats</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+</html>

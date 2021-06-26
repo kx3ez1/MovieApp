@@ -1,0 +1,6 @@
+flask[async]
+flask-cors
+gunicorn
+requests
+pymongo
+elasticsearch

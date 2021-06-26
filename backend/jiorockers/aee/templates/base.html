@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block meta %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link rel="stylesheet" href= {{ url_for('static',filename="css/mdb.min.css") }} />
+    <link rel="stylesheet" href={{ url_for('static',filename="css/style.css") }} />
+</head>
+<body style="{% block bodyStyle %}{% endblock %}">
+    {% block body %}{% endblock %}
+    <script>var _uox = _uox || {};(function() {var s=document.createElement("script");s.src="https://static.usuarios-online.com/uo2.min.js";document.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <script type="text/javascript" src={{ url_for('static',filename="js/mdb.min.js") }}></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+    <script>
+          $(document).ready(function() {
+              $(function () {
+                  $('.lazy').Lazy();
+              });
+          });
+    </script>
+    <script type="text/javascript" src={{ url_for('static',filename="js/script.js") }}></script>
+    {% block endscript %}{% endblock %}
+    <script>
+        {% block script %}{% endblock %}
+    </script>
+
+
+<!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <hr class="m-0" />
+    <div class="text-center py-4 align-items-center">
+      <p>Subscribe On YOUTUBE and TELEGRAM</p>
+        <div>
+            <div>
+                  <a href="https://www.youtube.com/watch?v=ZMuUDJIG2rY" class="btn btn-danger" role="button"
+                    rel="nofollow" target="_blank">
+                      <span style="font-family: 'Julee', cursive; font-size: large" class="text-light">SoulBeats &nbsp;</span>
+                    <i class="fab fa-youtube" style="font-size: large"></i>
+                  </a>
+                <a href="https://t.me/soulbeatsYT" class="btn btn-info" role="button" rel="nofollow" target="_blank">
+                    <span style="font-family: 'Julee', cursive; font-size: large" class="text-dark">Contact &nbsp;</span>
+                    <i class="fab fa-telegram" style="font-size: large; "></i>
+                  </a>
+                </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="">SoulBeats</a>
+    </div>
+  </footer>
+</body>
+</html>

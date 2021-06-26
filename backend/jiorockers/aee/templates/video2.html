@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+{% endblock %}
+{% block title %}SoulBeats{% endblock %}
+{% block bodyStyle %}color: white{% endblock %}
+{% block body %}
+      <header>
+    <!-- Intro settings -->
+    <style>
+      #intro {
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 58px;
+      }
+      @media (max-width: 991px) {
+        #intro {
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 45px;
+        }
+      }
+    </style>
+
+   <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+        <!-- Navbar brand -->
+          <div class="row">
+              <div class="col-sm-3">
+                <a class="navbar-brand" target="_blank" href="#" style="font-family: 'Julee', cursive;font-size: larger">
+                  <img src="{{ url_for('static',filename="img/logo.jpg") }}" height="30" alt="" loading="lazy" style="margin-top: -3px;" />SoulBeats
+                </a>
+              </div>
+              <a href="https://www.usuarios-online.com/en/" data-id="363b122c528f54df4a0446b6bab05515" data-type="default" target="_blank" id="uox_link" style="position: fixed;left: 25%">users online</a>
+              <div class="col-sm-9">
+                          <div class="input-group">
+                                  <div class="form-outline">
+                                    <input id="search-input" type="search" id="form1" class="form-control" />
+                                    <label class="form-label" for="form1">Search</label>
+                                  </div>
+                                  <button id="search-button" type="button" class="btn btn-primary">
+                                    <i class="fas fa-search"></i>
+                                  </button>
+                          </div>
+                   <div class="form-check form-switch">
+                        <input class="form-check-input" style="float: right" type="checkbox" id="flexSwitchCheckChecked" onchange="alert_me()"/>
+                    </div>
+              </div>
+              </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+  <!--Main layout-->
+<main class="my-5">
+    <div class="container">
+      <!--Section: Content-->
+          <div class="row">
+              <span style="padding-top: 15%"></span>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                       <video controls>
+                            <source src="{{ link | playurl }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                        {{ link | minfo | safe }}
+                    </p>
+                    <!--a href="#!" class="btn btn-primary"></a-->
+                  </div>
+                </div>
+              <div class="text-center">
+                  <h5 class="card-title"><a href="{{ link | playurl }}" class="btn btn-sm btn-primary">Direct Download</a></h5>
+              </div>
+                </div>
+          </div>
+    </div>
+</main>
+{% endblock %}

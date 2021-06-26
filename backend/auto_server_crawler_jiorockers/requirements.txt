@@ -1,0 +1,5 @@
+python-dateutil
+requests
+bs4
+pymongo
+gunicorn
