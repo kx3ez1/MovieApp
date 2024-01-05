@@ -1,16 +1,18 @@
-# :performing_arts: MovieApp
+# MovieApp
 
-## :dart:BackEnd
-Backend is devided into backend webserver and backend automation server for scraping data
-- webserver is designed using flask framework(python)
-- automation is coded with requests lib(python)
+## Backend
+
+The backend is divided into two parts: the web server and the automation server for data scraping.
+- The web server is built using the Flask framework (Python).
+- The automation server is developed using the Requests library (Python).
+## Frontend
+
+The frontend of the project is created using the Flutter framework (Dart programming).
+
+- Here are some sample images of the Android mobile frontend:
+
+<br/>
 
 
-
-## :dart:Frontend
-
-Frontend of the project designed using Flutter framework(Dart programming)
-
-- sample frontend images of android mobile
-
-<img src="https://github.com/kx3ez1/MovieApp/blob/main/frontend/soul_beats/assets/screenshot2.jpg?raw=true" height=350> <img src="https://github.com/kx3ez1/MovieApp/blob/main/frontend/soul_beats/assets/screenshot1.jpg?raw=true" height=350>
+<img src="https://github.com/kx3ez1/MovieApp/blob/main/frontend/soul_beats/assets/screenshot2.jpg?raw=true" width="200" alt="screenshot2">
+<img src="https://github.com/kx3ez1/MovieApp/blob/main/frontend/soul_beats/assets/screenshot1.jpg?raw=true" width="200" alt="screenshot1">
