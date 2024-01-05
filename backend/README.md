@@ -1,9 +1,9 @@
-# Backend servers
+# Backend Servers
 ### auto_server_crawler_jiorockers
-- This Server will auto crawls website and auto updates Database
+- This server automatically crawls websites and updates the database.
 ### jiorockers
-- Web Based Application  ***backend + frontend***
+- This is a web-based application that includes both backend and frontend.
 ### sel-su1-tech 
-- Android Backend Api
+- This is the backend API for an Android application.
 ### user_notifier_ 
-- This is Integrated with MobileApp To Inspect Users
+- This is integrated with a mobile app to monitor users.
